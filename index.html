@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test-dokument</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Quattrocento:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <details id="contrast">
+    <summary>Kontrast</summary>
+
+    <h2 class="good">Denne tekst er nem at læse</h2>
+
+    <h2 class="bad">Denne tekst er sværere at se</h2>
+
+  </details>
+
+  <details id="font">
+    <summary>Skrifttyper</summary>
+
+    <h2 class="plain">Dette er lidt kedeligt</h2>
+    <p class="plain">med en masse tekst der bare står og "er" som tekst, og ligner noget test-tekst i stedet for det man virkelig vil have ud.</p>
+
+    <h2 class="design">Dette er lidt bedre</h2>
+    <p class="design">Her er der noget tekst der måske endda passer til emnet - uanset så ser det ud som om man har tænkt på hvordan det skal se ud</p>
+
+    </details>
+
+<details id="centered">
+  <summary>Centreret tekst</summary>
+  <section id="ugly">
+    <p>Her er én formular:</p>
+    <form action="" id="form1">
+      <label for="name">Navn</label>
+      <input type="text" id="name" name="name">
+      <label for="age">Alder</label>
+      <input type="number" id="age" name="age">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email">
+    </form>
+  </section>
+
+  <section id="pretty">
+    <p>Her er en anden formular:</p>
+    <form action="" id="form2">
+      <label for="name">Navn</label>
+      <input type="text" id="name" name="name">
+      <label for="age">Alder</label>
+      <input type="number" id="age" name="age">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email">
+    </form>
+  </section>
+</details>
+
+<details>
+  <summary>
+  Data-attributter</summary>
+
+  <button id="my-btn" data-user-id="petl">Klik på knappen</button>
+
+</details>
+
+<details><summary>Grid</summary>
+
+  <dialog id="dialog-update-order" open>
+    <form id="form-update-order">
+      <h2>Opdater booking</h2>
+      <label for="frisør">Frisør:</label>
+      <input type="text" id="update-frisør" name="frisør" required />
+
+      <label for="behandling">Behandling:</label>
+      <input
+        type="text"
+        id="update-behandling"
+        name="behandling"
+        required
+      />
+
+      <label for="dato">Dato:</label>
+      <input type="date" id="update-dato" name="dato" required />
+
+      <label for="tid">Tid:</label>
+      <input type="time" id="update-tid" name="tid" required />
+
+      <label for="navn">Navn:</label>
+      <input type="text" id="update-navn" name="navn" required />
+
+      <label for="telefonNummer">Telefonnummer:</label>
+      <input
+        type="tel"
+        id="update-telefonNummer"
+        name="telefonNummer"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input type="email" id="update-email" name="email" required />
+
+      <button type="submit">Opdater</button>
+    </form>
+    <form method="dialog"><button>Annuller</button></form>
+  </dialog>
+</details>
+
+<details><summary>Datalist</summary>
+
+  <form action="" id="genreform">
+    <label for="genre">Genre</label>
+    <input type="text" id="genre" name="genre" list="genres">
+
+    <datalist id="genres">
+      <option value="Action"></option>
+      <option value="Drama"></option>
+      <option value="Romance"></option>
+      <option value="Sci-fi"></option>
+    </datalist>
+
+    <button id="btn-genre">Add genre</button>
+    <p>Added genres:</p>
+    <ul id="added-genres"></ul>
+  </form>
+
+</details>
+
+  <script src="script.js"></script>
+</body>
+</html>

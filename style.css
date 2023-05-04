@@ -1,0 +1,59 @@
+#contrast .good {
+  background-color: #333;
+  color: #eee;
+  padding: 1em;
+}
+
+#contrast .bad {
+  padding: 1em;
+  background-color: #b96161;
+  color: #af6060;
+}
+
+h2.design {
+  font-family: 'Quattrocento', serif;
+}
+
+p.design {
+  font-family: 'Lora', serif;
+}
+
+#centered #ugly {
+  border: 1px solid black;
+  padding: 2em;
+  text-align: center;
+}
+
+#centered #ugly label {
+  display: block;
+  text-align: center;
+}
+#centered #ugly input {
+  /* nothing needed to keep it ugly */
+}
+
+#centered #pretty {
+  border: 1px solid black;
+  padding: 2em;
+  
+}
+
+#centered #pretty form {
+  display: grid;
+  max-width: 40%;
+  grid-template-columns: auto auto;
+  gap: 2px;
+}
+
+/* Grid lavet manuelt */
+
+#form-update-order {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+#form-update-order h2 {
+  grid-column: 1 / 3;
+}
